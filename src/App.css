@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+:root {
+    --bg: #FFFFFF;
+    --basic: #000000;
+    --blue: #0087C9;
+    --orange: #FFB168;
+    --lightgrey: #ffffff;
+    --grey: #A3A3A3;
+    --steel: #4C5868;
+    /* font-sizes */
+    --f-xs: 11px;
+    --f-sm: 14px;
+    --f-md: 15px;
+    --f-lg: 16px;
+    --f-xl: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type="number"], input[type="number"]:hover, input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app-wrapper {
+    display: flex;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+    position: absolute;
+    top: -5px;
+    left: -25px;
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    transform: scale(0.8);
+    object-fit: contain;
 }
